@@ -1,0 +1,274 @@
+/* ?------------------------- normalization -------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* ?------------------------- general tags -------------------------------*/
+*::selection {
+  color: #ffffff;
+  background-color: #8e51ff;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ?------------------------- general classes -------------------------------*/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clr-fix {
+  clear: both;
+}
+
+/* ?------------------------- Header & navbar -------------------------------*/
+.header {
+  background-color: #F5F3FF;
+  border-bottom: 1px solid #ddd6ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 16px 24px;
+}
+
+.header .logo {
+  width: 40px;
+  background-color: #8e51ff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-inline-end: 8px;
+}
+
+.header .nav-title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 700;
+  margin-block-start: 6px;
+}
+
+.nav-list {
+  margin: 10px 45px 0 0;
+
+}
+
+.nav-list-item {
+  margin: 0 32px 0 0;
+}
+
+.last-nav-link {
+  margin-inline-end: 0;
+}
+
+.nav-list-item a {
+  font-weight: 500;
+  color: #333333;
+  line-height: 24px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-list-item a::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #8e51ff;
+  position: absolute;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-list-item.home a {
+  color: #8e51ff;
+}
+
+.nav-list-item.home a::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #8e51ff;
+  position: absolute;
+  bottom: -5px;
+}
+
+.nav-list-item:hover a,
+.nav-list-item:hover a::before {
+  color: #8e51ff;
+  width: 100%;
+}
+
+/* ?------------------------- Hero section -------------------------------*/
+#hero .container {
+  padding-top: 176px;
+  padding-bottom: 96px;
+}
+
+.hero-img {
+  width: 47%;
+  padding: 20px;
+  border: 2px solid #99a1af48;
+  border-radius: 24px;
+  position: relative;
+}
+
+.hero-img img {
+  border-radius: 16px;
+}
+
+.hero-img span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #8e51ff;
+  padding: 6px 12px;
+  border-radius: 15px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+#hero .container .content {
+  width: 48%;
+}
+
+#hero .container .content .prod-info {
+  margin-bottom: 32px;
+}
+
+#hero .container .content .labels {
+  margin-bottom: 16px;
+}
+
+#hero .container .content .labels .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #a684ff;
+  padding: 6px 12px;
+  border-radius: 15px;
+  margin-right: 12px;
+}
+
+#hero .container .content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+#hero .container .content h1 span {
+  color: #8e51ff;
+}
+
+#hero .container .content .desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #333333;
+}
+
+#hero .pricing {
+  margin-bottom: 32px;
+}
+
+#hero .pricing .prices {
+  margin-bottom: 16px;
+
+}
+
+#hero .pricing .price {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #333333;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+#hero .pricing .before-discount {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #333333;
+  text-decoration: line-through;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+#hero .pricing .savings {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #e7000b;
+  background-color: #ffe2e2;
+  padding: 6px 12px;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+
+#hero .installment-info {
+  color: #333333;
+  line-height: 24px;
+}
+
+#hero .btns button {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 20px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+#hero .btns .cart {
+  background-color: #8e51ff;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 16px;
+
+}
+
+#hero .btns .wishlist {
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #d1d5db;
+  margin-bottom: 16px;
+
+}
+
+#hero .btns button:hover {
+  transform: scale(1.04);
+}
