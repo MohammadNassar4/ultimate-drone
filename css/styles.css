@@ -18,6 +18,7 @@ html,
 body {
   scroll-behavior: smooth;
   font-family: sans-serif;
+  color: #333333;
 }
 
 img {
@@ -61,7 +62,6 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
-  color: #333333;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -74,7 +74,6 @@ a {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  color: #333333;
   text-align: center;
 }
 
@@ -110,7 +109,6 @@ a {
 }
 
 .header .nav-title {
-  color: #333333;
   font-size: 24px;
   font-weight: 700;
   margin-block-start: 6px;
@@ -222,7 +220,6 @@ a {
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
-  color: #333333;
   margin-bottom: 16px;
 }
 
@@ -234,7 +231,6 @@ a {
   font-size: 20px;
   font-weight: 400;
   line-height: 33px;
-  color: #333333;
 }
 
 #hero .pricing {
@@ -250,7 +246,6 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
-  color: #333333;
   margin-right: 16px;
   vertical-align: middle;
 }
@@ -259,7 +254,6 @@ a {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #333333;
   text-decoration: line-through;
   margin-right: 16px;
   vertical-align: middle;
@@ -277,7 +271,6 @@ a {
 }
 
 #hero .installment-info {
-  color: #333333;
   line-height: 24px;
 }
 
@@ -331,7 +324,6 @@ a {
   min-width: 800px;
   border-collapse: collapse;
   text-align: center;
-  color: #333333;
 }
 
 thead th {
@@ -358,7 +350,8 @@ thead .first-column {
   text-align: left;
 }
 
-th, td {
+th,
+td {
   border-bottom: 2px solid #d1d5db71;
 }
 
@@ -435,7 +428,7 @@ td {
   padding: 6px 12px;
   background-color: #8e51ff;
   border-radius: 15px;
-  
+
 }
 
 .our-price {
@@ -523,4 +516,202 @@ table .stars {
   font-size: 14px;
   font-weight: 400;
   color: #00a63e;
+}
+
+/* ?--------------------------------- Reviews section ---------------------------- */
+
+#reviews {
+  padding-block: 80px;
+}
+
+#reviews .side-card {
+  min-width: 290px;
+  max-width: 382px;
+  width: 31%;
+  padding: 32px;
+  border: 2px solid #e5e7eb;
+  border-radius: 24px;
+  text-align: center;
+  position: sticky;
+  top: 80px;
+}
+
+#reviews .over-all-review {
+  margin-bottom: 32px
+}
+
+#reviews .side-card .raiting {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#reviews .side-card .fa-star {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+#reviews .side-card .raiting-details {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+#reviews .side-card .raiting-details .raiting-bar {
+  margin-bottom: 16px;
+}
+
+#reviews .side-card .raiting-details .raiting-bar .bar {
+  margin-inline: 10px;
+  background-color: #E5E7EB;
+  width: 72%;
+  height: 10px;
+  display: inline-block;
+  border-radius: 15px;
+  position: relative;
+}
+
+#reviews .side-card .raiting-details .raiting-bar .bar .progress {
+  background-color: #F0B100;
+  width: 78%;
+  height: 10px;
+  display: inline-block;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#reviews .side-card .raiting-details .raiting-bar.four-stars .bar .progress {
+  width: 15%;
+}
+
+#reviews .side-card .raiting-details .raiting-bar.three-stars .bar .progress {
+  width: 5%;
+}
+
+#reviews .side-card .raiting-details .raiting-bar.two-stars .bar .progress {
+  width: 1.5%;
+}
+
+#reviews .side-card .raiting-details .raiting-bar.one-star .bar .progress {
+  width: 0.5%;
+}
+
+#reviews .side-card .recommendation-and-quality {
+  padding-top: 24px;
+  border-top: 1px solid #d1d5db;
+}
+
+#reviews .side-card .recommendation-and-quality .recommendation {
+  margin-left: 20px;
+}
+
+#reviews .side-card .recommendation-and-quality .quality {
+  margin-right: 30px;
+}
+
+#reviews .side-card .recommendation-and-quality .num {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#reviews .side-card .recommendation-and-quality .text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#reviews .content {
+  width: 65%;
+}
+
+#reviews .content .review-card {
+  padding: 32px;
+  margin-bottom: 24px;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+#reviews .content .author-img {
+  width: 56px;
+  border-radius: 50%;
+  border: 2px solid #a684ff;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.review-card .author-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.review-card .author-job {
+  margin-bottom: 8px;
+}
+
+.review-card .user-raiting .fa-star {
+  font-size: 14px;
+}
+
+.review-card .user-raiting .stars {
+  margin-right: 8px;
+}
+
+.review-card .user-raiting span:nth-child(2) {
+  font-size: 14px;
+}
+
+.review-card .review-info .purchase {
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5d0ec0;
+  background-color: #ede9fe;
+  padding: 4px 12px;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+.review-card .review-info .date {
+  width: fit-content;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.review-card .card-head {
+  margin-bottom: 24px;
+}
+
+.review-card .card-body {
+  margin-bottom: 16px;
+}
+
+.review-card .card-body p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+#reviews .reviews-btn-container {
+  padding-top: 32px;
+  text-align: center;
+}
+
+#reviews .reviews-btn-container .reviews-btn {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #8e51ff;
+  color: #ffffff;
+  border: 2px solid #8e51ff;
+  padding: 12px 32px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.2s;
+}
+
+#reviews .reviews-btn-container .reviews-btn:hover {
+  background-color: #ffffff;
+  color: #7f22fe;
 }
