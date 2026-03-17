@@ -34,6 +34,13 @@ a {
 }
 
 /* ?------------------------- general classes -------------------------------*/
+
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 0px 24px;
+}
+
 .float-left {
   float: left;
 }
@@ -44,6 +51,39 @@ a {
 
 .clr-fix {
   clear: both;
+}
+
+.sec-head {
+  margin-bottom: 64px;
+}
+
+.sec-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.sec-title span {
+  color: #8e51ff;
+}
+
+.sec-desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #333333;
+  text-align: center;
+}
+
+.color-purpel {
+  color: #7008E7;
+}
+
+.color-red {
+  color: #e55c00;
 }
 
 /* ?------------------------- Header & navbar -------------------------------*/
@@ -57,10 +97,8 @@ a {
   z-index: 9999;
 }
 
-.container {
-  max-width: 1280px;
-  margin-inline: auto;
-  padding: 16px 24px;
+.header .container {
+  padding-block: 16px;
 }
 
 .header .logo {
@@ -271,4 +309,218 @@ a {
 
 #hero .btns button:hover {
   transform: scale(1.04);
+}
+
+/* ?--------------------------------- Specifications section ---------------------------- */
+#specifications {
+  background-color: #F7F5FF;
+  padding: 80px 0;
+}
+
+.table-wrapper {
+  background-color: #ffffff;
+  padding: 32px;
+  border: 2px solid #d1d5db;
+  border-radius: 24px;
+  overflow: auto;
+  margin-bottom: 48px;
+}
+
+.features-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  text-align: center;
+  color: #333333;
+}
+
+thead th {
+  padding: 24px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+table .ours {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8e51ff;
+}
+
+table .competitor {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6a7282;
+}
+
+thead .first-column {
+  width: 25%;
+  text-align: left;
+}
+
+th, td {
+  border-bottom: 2px solid #d1d5db71;
+}
+
+thead th {
+  border-bottom-color: #d1d5db;
+}
+
+tfoot td {
+  border-bottom: none;
+}
+
+td {
+  padding: 20px 16px;
+}
+
+.fa-solid {
+  margin-right: 8px;
+}
+
+.fa-video {
+  color: #00B8DB;
+}
+
+.fa-camera {
+  color: #00BBA7;
+}
+
+.fa-battery-full {
+  color: #00C950;
+}
+
+.fa-satellite-dish {
+  color: #FF6900;
+}
+
+.fa-gauge-high {
+  color: #FB2C36;
+}
+
+.fa-shield-halved {
+  color: #00a6f4;
+}
+
+.fa-scale-balanced {
+  color: #615FFF;
+}
+
+.fa-cloud-rain {
+  color: #2B7FFF;
+}
+
+.fa-dollar-sign {
+  color: #F0B100;
+}
+
+.first-col {
+  font-weight: 500;
+  text-align: left;
+}
+
+.fa-check {
+  margin-right: 4px;
+}
+
+.fa-xmark {
+  margin-right: 0;
+}
+
+.our-specs {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  width: fit-content;
+  padding: 6px 12px;
+  background-color: #8e51ff;
+  border-radius: 15px;
+  
+}
+
+.our-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #7008e7;
+}
+
+.bg-light-purpel {
+  background-color: #EDE9FE;
+}
+
+.rounded-top {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.competitor-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+table .over-all {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 24px 16px;
+}
+
+table .rating {
+  font-weight: 600;
+}
+
+table .our-rating {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+table .stars {
+  margin-bottom: 8px;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+  color: #FDC700;
+  margin-right: 0;
+}
+
+.our-stars .fa-star {
+  font-size: 18px;
+}
+
+.fa-star.gray {
+  color: #d1d5dc;
+}
+
+#specifications .winner {
+  width: fit-content;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px 32px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+#specifications .winner .fa-trophy {
+  color: #00C950;
+  font-size: 25px;
+  margin-right: 12px;
+  margin-top: 7px;
+}
+
+#specifications .winner .winner-content p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00a63e;
+  margin-bottom: 5px;
+}
+
+#specifications .winner .winner-content p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  color: #00a63e;
 }
